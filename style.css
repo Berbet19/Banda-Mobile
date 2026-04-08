@@ -6,6 +6,14 @@
     color: inherit;
 }
 
+body{
+   
+    min-height: 100dvh;
+}
+
+
+
+
 header {
     width: 100dvw;
     height: 100dvh;
@@ -15,38 +23,75 @@ header {
         align-items: center;
         justify-content: space-between;
         padding: 2rem;
-        height: 10%;
+      height: 10dvh;
         background-color: aqua;
+
+       
 
         & nav {
             position: fixed;
             bottom: 0;
             left: 0;
             right: 0;
-            height: 10%;
+           height: 15dvh;
+            z-index: 9999;
             background-color: yellow;
             display: flex;
             align-items: center;
             justify-content: space-between;
             padding: 1rem;
+            
+                
+               & a {
+                padding: 1.0dvw;
+                background-color: #00baff;
+                color: white; 
+                align-items: center;
+                display: flex;
+                 
+
+               }
         }
+
+          
     }
 
-    & .hero {
-        height: 90%;
+       & .hero {
+       height: 75dvh;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         background-color: blueviolet;
+
+     
+
+
     }
+
+  
 }
 
 section {
-    width: 100dvw;
-    height: 100dvh;
-    padding: 2rem;
+        width: 100dvw;
+        height: 100dvh;
+        padding: 2rem;
+      
+
+
+                
 }
+  
+
+
+     
+    
+  
+
+ 
+
+
+
 
 
 footer {
