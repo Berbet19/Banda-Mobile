@@ -17,6 +17,7 @@ body{
 header {
     width: 100dvw;
     height: 100dvh;
+   
 
 
         & nav {
@@ -24,43 +25,118 @@ header {
            height: 10dvh;
             display: flex;
             align-items: center;
-            padding: 1rem;
-            gap: 15dvw;
+            padding: 2rem;
+            gap: 1.5dvw;
             flex-direction: row;
             justify-items: center;
             justify-content: center;
+          
+           background-color: rgb(0, 0, 0);
 
             
                 
                & a {
-                padding: 2dvw;
-                background-color: #00baff;
-                color: white; 
+                padding: 1dvw;
+                font-family:Arial, Helvetica, sans-serif;
+                background-color: #000000;
+                color: rgb(255, 201, 130); 
                 align-items: center;
                 display: flex;
-                
-                border-radius: 5%;
+                border-radius: 10%;
                 flex-direction: row;
-                 
+                   margin-top: 2vh;  
+                   border: solid 0.2rem white;
+              
+           
 
                }
-        }
+
+                }
+                
+               
+
+               
+       
 
           
     }
 
        & .hero {
-       height: 90dvh;
+        height: 90vh;
+        width: 100%;
+        max-width: 100%;
         display: flex;
-        flex-direction: column;
         align-items: center;
         justify-content: center;
-        background-color: blueviolet;
+        overflow: hidden;
+        background-color: black;
+
+        
+
+        & .grid {
+         display: flex;
+        flex-direction: row;
+        max-width: 100%;
+        max-height: 100%;
+         gap: 3rem;
+        }
+
+         .grid img {
+         max-width: 100%;
+         height: auto;
+         max-height: 40vh;
+         border: solid 0.2rem white;
+
+}
+
+         
+          
+
+           @media screen and (max-width: 1100px) {
+              .grid {
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+              }
+}
+            
+             @media screen and (min-width: 1200px) {
+               .grid Img{
+                max-height: 45vh
+              }
+             }
+
+        }
+
+        &  img{
+        max-width: 100%;
+        max-height: 90vh;
+        height: auto;
+        width: auto;
+        object-fit: contain;
+          
+        }
+      
+        .grid img {
+        max-width: 100%;
+        height: auto;
+        max-height: 40vh; 
+        }
+
+          .grid > * {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          flex: 1;
+        }
 
      
 
 
-    }
+
+
+
+    
 
 
 
@@ -69,8 +145,8 @@ section {
         height: 100dvh;
         padding: 2rem;
       
-
-
+      
+      
                 
 }
   
@@ -88,12 +164,14 @@ section {
 
 footer {
     width: 100dvw;
-    height: 20dvh;
+    height: 15dvh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: aqua;
+    background-color: rgb(0, 0, 0);
+    color: aliceblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 
@@ -101,7 +179,7 @@ footer {
 
 .timeline {
   position: relative;
-  max-width: 1200px;
+  max-width: 1100px;
   margin: 0 auto;
 }
 
@@ -133,7 +211,7 @@ footer {
   height: 25px;
   right: -17px;
   background-color: rgb(0, 0, 0);
-  border: 4px solid #55bbff;
+  border: 4px solid rgb(255, 201, 130);
   top: 15px;
   border-radius: 50%;
   z-index: 1;
